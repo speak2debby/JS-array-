@@ -10,7 +10,7 @@ let data = [
 function interestCalculator(payload) {
   payload.map((obj) => {
     let rate = null
-    if (obj.principal >= 2500 && 1 < obj.time < 3) {
+    if (obj.principal >= 2500 && obj.time > 1 && obj.time < 3) {
       rate = 3
     } else if (obj.principal >= 2500 && obj.time >= 3) {
       rate = 4
